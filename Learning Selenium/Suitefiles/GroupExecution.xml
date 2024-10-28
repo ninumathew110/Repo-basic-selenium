@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_GroupExecution">
+	<groups>
+		<run>
+			<include name="IntegrationTest"></include>
+			<exclude name="FunctionalityTest"></exclude>
+		</run>
+	</groups>
+	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="TestngBatchExecution.Test1" />
+			<class name="TestngBatchExecution.Test2" />
+			<class name="TestngBatchExecution.Test3" />
+			<class name="TestngBatchExecution.Test4" />
+			<class name="TestngBatchExecution.Test5" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite_GroupExecution -->

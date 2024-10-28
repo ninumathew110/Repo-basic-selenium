@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite_ParallelExecutiion">
+	<test thread-count="5" parallel="classes" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="TestngBatchExecution.Test1" />
+			<class name="TestngBatchExecution.Test2" />
+			<class name="TestngBatchExecution.Test3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite_ParallelExecutiion -->

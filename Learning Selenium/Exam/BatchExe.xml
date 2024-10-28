@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test7,Test8,Test9">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Exam.Test8"/>
+      <class name="Exam.Test7"/>
+      <class name="Exam.Test9"/>
+    </classes>
+  </test> <!-- Test7,Test8,Test9 -->
+</suite> <!-- Suite -->
